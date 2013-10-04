@@ -29,7 +29,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 // Add Toolbar Menus
 function advanced_environment_indicator_toolbar() {
   global $wp_admin_bar;
+  $args = array(
+    'id' => 'advanced_environment_indicator',
+    'title' => 'Development',
+    );
 
+  $wp_admin_bar->add_node($args);
 }
 
 // Hook into the 'wp_before_admin_bar_render' action
