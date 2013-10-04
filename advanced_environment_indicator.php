@@ -26,13 +26,15 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
-// Add Toolbar Menus
+/**
+ * Read environment name from wp-settings.php and show in Toolbar
+ */
 function advanced_environment_indicator_toolbar() {
   global $wp_admin_bar;
   $args = array(
     'id' => 'advanced_environment_indicator',
-    'title' => 'Development',
-    );
+    'title' => ADVANCED_ENVIRONMENT_INDICATOR_NAME,
+  );
 
   $wp_admin_bar->add_node($args);
 }
