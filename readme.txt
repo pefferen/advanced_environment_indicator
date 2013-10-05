@@ -1,4 +1,4 @@
-=== advanced_environment_indicator ===
+=== advanced environment indicator ===
 Contributors: pefferen
 Tags: development, admin, staging
 Requires at least: 3.3

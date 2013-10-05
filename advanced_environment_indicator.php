@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Advanced_environment_indicator
+Plugin Name: Advanced environment indicator
 Version: 0.1-alpha
 Description: This plugin shows the environment name (dev || staging || prod) int he Woerpress toolbar, to avoid editing the wrong environment.
 Author: Patrick van Efferen
