@@ -1,15 +1,21 @@
-# advanced_environment_indicator
+=== advanced_environment_indicator ===
+Contributors: pefferen
+Tags: development, admin, staging
+Requires at least: 3.3
+Tested up to: 3.61
+Stable tag: 0.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 This plugin shows the environment name (dev || staging || prod) in the Wordpress toolbar, to avoid editing the wrong environment.
 
-
-## Description
+== Description ==
 This plugin shows the environment name (dev || staging || prod) in the Wordpress toolbar, to avoid editing the wrong environment.
 
 It's settings are added to wp-config.php to set and forget. If you replace the DB
 you still preserve the enviromnemt name.
 
-## Installation
+== Installation ==
 
 This section describes how to install the plugin and get it working.
 
@@ -18,17 +24,17 @@ This section describes how to install the plugin and get it working.
 3. Place `define('ADVANCED_ENVIRONMENT_INDICATOR_NAME', 'development');` in your wp-config.php. Replace 'development' with the name of your environment.
 4. Place `define('ADVANCED_ENVIRONMENT_INDICATOR_COLOR', '#669900');` in your wp-config.php. Replace '#669900' with any valid CSS color value of your choice.
 
-## Frequently Asked Questions
+== Frequently Asked Questions ==
 
-# Why set the environment name in wp-config.php
+= Why set the environment name in wp-config.php =
 
 This plugin povides a clear and reliable environment indicator. Having your environment name set in the wp-config.php will not be overwritten when you migrate databaseses back and forth.
 
-# Why not look at the address bar in the browser?
+= Why not look at the address bar in the browser? =
 
 You can, and if that is enough you will not need this plugin.
 
-## Changelog
+== Changelog ==
 
-# 0.1
+= 0.1 =
 First release.
