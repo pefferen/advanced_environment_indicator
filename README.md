@@ -20,15 +20,15 @@ This section describes how to install the plugin and get it working.
 
 ## Frequently Asked Questions
 
-# Why set the environment name in wp-config.php
+### Why set the environment name in wp-config.php
 
 This plugin povides a clear and reliable environment indicator. Having your environment name set in the wp-config.php will not be overwritten when you migrate databaseses back and forth.
 
-# Why not look at the address bar in the browser?
+### Why not look at the address bar in the browser?
 
 You can, and if that is enough you will not need this plugin.
 
 ## Changelog
 
-# 0.1
+### 0.1
 First release.
