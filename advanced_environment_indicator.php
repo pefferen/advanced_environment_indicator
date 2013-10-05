@@ -33,7 +33,7 @@ function advanced_environment_indicator_toolbar() {
   global $wp_admin_bar;
   $args = array(
     'id' => 'advanced_environment_indicator',
-    'title' => ADVANCED_ENVIRONMENT_INDICATOR_NAME,
+    'title' => esc_attr(ADVANCED_ENVIRONMENT_INDICATOR_NAME),
   );
 
   $wp_admin_bar->add_node($args);
@@ -41,3 +41,19 @@ function advanced_environment_indicator_toolbar() {
 
 // Hook into the 'wp_before_admin_bar_render' action
 add_action( 'wp_before_admin_bar_render', 'advanced_environment_indicator_toolbar', 999 );
+
+/**
+ * Add styling for Advanced environment indicator to DOM
+ */
+function advanced_environment_indicator_style() {
+  $color = esc_attr(ADVANCED_ENVIRONMENT_INDICATOR_COLOR);
+  $style = "<style>
+     #wp-admin-bar-advanced_environment_indicator {
+            background-color: {$color} !important;
+          }</style>";
+  echo $style;
+}
+
+add_action( 'admin_head', 'advanced_environment_indicator_style' );
+
+?>
